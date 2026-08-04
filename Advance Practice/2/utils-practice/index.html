@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+
+    <title>Password Strength Checker</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+<div class="container py-5">
+
+    <div class="row justify-content-center">
+
+        <div class="col-lg-6">
+
+            <div class="card shadow">
+
+                <div class="card-header">
+                    <h3 class="mb-0">
+                        Create Account
+                    </h3>
+                </div>
+
+                <div class="card-body">
+
+                    <form id="testSignUpForm">
+
+                        <!-- Email -->
+
+                        <div class="mb-4">
+
+                            <label
+                                class="form-label"
+                                for="email">
+                                Email
+                            </label>
+
+                            <input
+                                id="email"
+                                name="email"
+                                type="email"
+                                class="form-control"
+                                placeholder="john@example.com">
+
+                            <small
+                                id="email-error"
+                                class="text-danger fw-bold d-none">
+
+                                Invalid email address.
+
+                            </small>
+
+                        </div>
+
+
+                        <!-- Password -->
+
+                        <div class="mb-3">
+
+                            <label
+                                class="form-label"
+                                for="password">
+
+                                Password
+
+                            </label>
+
+                            <input
+                                id="password"
+                                name="password"
+                                type="password"
+                                class="form-control">
+
+                        </div>
+
+
+                        <!-- Progress -->
+
+                        <div class="mb-4">
+
+                            <div class="progress">
+
+                                <div
+                                    id="progress"
+                                    class="progress-bar bg-danger"
+                                    role="progressbar"
+                                    style="width:0%">
+
+                                    0%
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Rules -->
+
+                        <div class="border rounded p-3">
+
+                            <h6>
+                                Password Requirements
+                            </h6>
+
+                            <ul class="list-unstyled mb-0">
+
+                                <li
+                                    id="rule-min-length"
+                                    class="text-danger fw-bold">
+
+                                    Minimum 8 characters
+
+                                </li>
+
+                                <li
+                                    id="rule-upperCase"
+                                    class="text-danger fw-bold">
+
+                                    One uppercase letter
+
+                                </li>
+
+                                <li
+                                    id="rule-number"
+                                    class="text-danger fw-bold">
+
+                                    One number
+
+                                </li>
+
+                                <li
+                                    id="rule-special"
+                                    class="text-danger fw-bold">
+
+                                    One special character
+
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                        <button
+                            class="btn btn-primary w-100 mt-4"
+                            type="submit">
+
+                            Sign Up
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script type="module" src="./main.js"></script>
+
+</body>
+
+</html>
